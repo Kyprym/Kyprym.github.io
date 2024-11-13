@@ -10,7 +10,7 @@ export const HeaderButtonReducer = (state = defaultState, action) => {
         case "ABOUT_ME_BUTTON_ACTIVE":
             return action.payload
 
-        case "BUSKET_BUTTON_ACTIVE":
+        case "BASKET_BUTTON_ACTIVE":
             return action.payload
         default:
             return state

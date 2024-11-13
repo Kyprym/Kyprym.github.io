@@ -19,14 +19,19 @@
 }
 
 .header div {
+    margin-top: 0.1rem;
     display: flex;
     flex-direction: column;
-    font-size: 1.3rem;
-    padding: 1rem 1rem 1rem 1rem;
+    font-size: 1.45rem;
+    padding: 0.5rem 1rem 1rem 1rem;
     padding-bottom: 0.5rem;
     background: none;
     color: aliceblue;
     cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .buttom_line {

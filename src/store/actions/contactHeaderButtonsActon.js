@@ -28,7 +28,7 @@ export const useHeaderButtonState = () => {
 
     const basketButtonActive = () => {
         dispatch({
-            type: "BUSKET_BUTTON_ACTIVE",
+            type: "BASKET_BUTTON_ACTIVE",
             payload: [false, false, false, true]
         })
     }
