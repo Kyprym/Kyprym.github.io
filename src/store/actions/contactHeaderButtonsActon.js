@@ -33,9 +33,6 @@ export const useHeaderButtonState = () => {
         })
     }
 
-
-
-
     return {
         contactButtonActive,
         dessertButtonActive,

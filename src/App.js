@@ -15,7 +15,7 @@ function App() {
 
       {isMobile ?
         < GlobalMobileComponent />
-        : < GlobalMobileComponent />}
+        : <h1> ПК версия в разработке</h1>}
     </div>
   );
 }

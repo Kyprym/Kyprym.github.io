@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux"
 import { HeaderButton } from "./headerButton"
-
 import { useHeaderButtonState } from "../../../store/actions/contactHeaderButtonsActon"
 import { nanoid } from "nanoid"
 
@@ -15,10 +14,6 @@ export const HeaderComponent = () => {
         basketButtonActive
     }
         = useHeaderButtonState()
-
-
-
-
 
     const headerButtonsTextArr = [
         {
@@ -42,8 +37,6 @@ export const HeaderComponent = () => {
             clickFunc: basketButtonActive
         }
     ]
-
-
 
     return <div className="fuctional_component header" >
         {headerButtonsTextArr.map((elem) => {
