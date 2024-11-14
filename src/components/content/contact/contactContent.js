@@ -47,22 +47,21 @@ export const ContactContentCompanent = () => {
     ]
 
 
-
-
-
     return <div id="contactContentCompanent">
         <LogoComponent />
         <p>Вы можете связасться со мной через:</p>
-        {
-            contactArr.map(elem => {
-                return <ContactChildComponent
-                    text={elem.text}
-                    icon={elem.icon}
-                    openMessenger={elem.openMessenger}
-                    key={nanoid()}
+        <span id="contactContentButtons">
+            {
+                contactArr.map(elem => {
+                    return <ContactChildComponent
+                        text={elem.text}
+                        icon={elem.icon}
+                        openMessenger={elem.openMessenger}
+                        key={nanoid()}
 
-                />
-            })
-        }
+                    />
+                })
+            }
+        </span>
     </div>
 }

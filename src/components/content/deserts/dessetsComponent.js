@@ -11,36 +11,37 @@ import rulette from "../../../img/assortiment img/rulette.png"
 
 
 export const DessertsContantCompanent = () => {
+    const addButtonText = "Добавить"
     const assortimentDesertsArr = [
         {
             name: "Медовик",
             img: medovik,
-            description: "description"
+            button: addButtonText
         },
         {
             name: "Кофейный",
             img: koffe,
-            description: "description"
+            button: addButtonText
         },
         {
             name: "Вишня в сметане",
             img: cherryInSourCream,
-            description: "description"
+            button: addButtonText
         },
         {
             name: "Французский поцелуй",
             img: frnceKiss,
-            description: "description"
+            button: addButtonText
         },
         {
             name: "Шоколад",
             img: chocolate,
-            description: "description"
+            button: addButtonText
         },
         {
             name: "Рулет «Шоколадный»",
             img: rulette,
-            description: "description"
+            button: addButtonText
         },
     ]
 
@@ -50,14 +51,10 @@ export const DessertsContantCompanent = () => {
         <h1> Ассортимент</h1>
         <span className="assortimentDiscription">От нежных классических тортов до оригинальных десертов, приготовленых с любовью и заботой о качестве.</span>
         <span className="assortimentDiscription">Так же, вы можете скачать наш каталог</span>
-        <a
-            href='../../../files/catalog.pdf'
-            target="_blank"
+        <a href='https://drive.google.com/file/d/16FQv36RAv4TbQ1E6tgC8RXm_Wp1kri97/view?usp=sharing'
             id="assortimentCatalogButton"
             className="ContactChildComponent">
-            скачать
-        </a>
-
+            скачать</a>
 
         <div id="DessertsContantCompanent">
             {
@@ -65,14 +62,11 @@ export const DessertsContantCompanent = () => {
                     return <DessertsChildContentCompanent
                         name={elem.name}
                         img={elem.img}
-                        description={elem.description}
+                        button={elem.button}
                         key={nanoid()}
                     />
                 })
             }
         </div>
-
-
-
     </div>
 }
