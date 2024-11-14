@@ -5,16 +5,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
+:root {
+    --fontColor: #4a1a1a;
+    --backgroundColor: #f7f1e6;
+    --backgroundColorActive: linear-gradient(to right, #a86c78d5, #ca6259d5);
+    --fontFamily: "Great Vibes", cursive;
+}
+
+
 body {
-    background: linear-gradient(to right, #a86c78, #ca6259);
+    background-color: var(--backgroundColor);
+
 }
 
 .fuctional_component {
-    background: linear-gradient(to right, #a86c78, #ca6259);
+    background-color: var(--backgroundColor);
+
 }
 
 .header {
-    font-family: "Great Vibes", cursive;
+    font-family: var(--fontFamily);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -28,18 +38,15 @@ body {
     padding: 0.5rem 1rem 1rem 1rem;
     padding-bottom: 0.5rem;
     background: none;
-    color: aliceblue;
+    color: var(--fontColor);
     cursor: pointer;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-radius: 10px 10px;
 }
 
 .buttom_line {
     width: 100%;
     height: 0.1rem;
-    background-color: white;
+    background-color: var(--fontColor);
 }
 
 #GlobalContentCompanent {
@@ -48,12 +55,18 @@ body {
     justify-content: center;
 }
 
+#contactContentCompanent p {
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: var(--fontFamily);
+}
+
 .ContactChildComponent {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 0.2rem solid white;
+    border: 0.2rem solid var(--fontColor);
     border-radius: 25px 25px 25px 25px;
     margin-top: 2rem;
     box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.6);
@@ -65,11 +78,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 0.2rem solid white;
+    border: 0.2rem solid var(--fontColor);
     border-radius: 25px 25px 25px 25px;
     margin-top: 2rem;
     box-shadow: 2px 15px 20px rgba(0, 0, 0, 0.6);
-    background-color: #ca5146;
+    background: var(--backgroundColorActive);
     transition: 0.1s;
 }
 
@@ -78,7 +91,7 @@ body {
 }
 
 .ContactChildComponentText {
-    color: white;
+    color: var(--fontColor);
     font-size: 2.5rem;
     padding-left: 2.5rem;
     transition: 1.2s;
@@ -91,4 +104,13 @@ body {
 .ContactChildComponent:active .ContactChildComponentText {
     font-size: 3rem;
     transition: 0.3s;
+}
+
+.contentLogo {
+    width: 100%;
+    height: 50%;
+}
+
+.buttom_line {
+    color: var(--fontColor);
 }

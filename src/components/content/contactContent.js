@@ -3,6 +3,7 @@ import { nanoid } from "nanoid"
 import TelegramIcon from '@mui/icons-material/Telegram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PhoneIcon from '@mui/icons-material/Phone';
+import { LogoComponent } from "../logo/logoCompanent";
 
 export const ContactContentCompanent = () => {
     const iconSize = "4rem"
@@ -12,27 +13,52 @@ export const ContactContentCompanent = () => {
     const phoneIcon = <PhoneIcon style={{ fontSize: iconSize, color: 'white', backgroundColor: 'green', borderRadius: iconBorderRadius }} />
 
 
+    const openTelegram = () => {
+        const url = "https://t.me/@aleks_sht?text=Добрый день, хочу заказать у вас тортик";
+        window.open(url);
+    };
+
+    const openWhatsApp = () => {
+        const url = "https://wa.me/+79525675639?text=Добрый день, хочу заказать у вас тортик";
+        window.open(url);
+    };
+
+    const openCall = () => {
+        const url = "tel:+79525675639";
+        window.location.href = url;
+    };
+
     const contactArr = [
         {
             text: "Telegram",
-            icon: telegramIcon
+            icon: telegramIcon,
+            openMessenger: openTelegram
         },
         {
             text: "WhatsApp",
-            icon: wathAppIcon
+            icon: wathAppIcon,
+            openMessenger: openWhatsApp
         },
         {
             text: "Позвонить",
-            icon: phoneIcon
+            icon: phoneIcon,
+            openMessenger: openCall
         },
     ]
 
+
+
+
+
     return <div id="contactContentCompanent">
+        <LogoComponent />
+        <p>Вы можете связасться со мной через:</p>
         {
             contactArr.map(elem => {
                 return <ContactChildComponent
                     text={elem.text}
                     icon={elem.icon}
+                    openMessenger={elem.openMessenger}
                     key={nanoid()}
 
                 />

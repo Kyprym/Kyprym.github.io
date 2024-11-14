@@ -16,8 +16,8 @@ export const GlobalContentCompanent = () => {
         return null;
     }, [contentState])
 
-    return <div id="GlobalContentCompanent">{
-        contact
-    }</div>;
+    return <div id="GlobalContentCompanent">
+        {contact}
+    </div>;
 
 }
