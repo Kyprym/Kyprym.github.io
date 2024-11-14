@@ -56,7 +56,7 @@ body {
 }
 
 #contactContentCompanent p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
     font-family: var(--fontFamily);
 }
@@ -113,4 +113,56 @@ body {
 
 .buttom_line {
     color: var(--fontColor);
+}
+
+#DessertsContantCompanent {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.DessertsChildContentCompanent {
+    text-align: center;
+    width: 50%;
+    padding: 0.2rem;
+}
+
+.DessertsChildContentCompanent img {
+    width: 95%;
+    border-radius: 15%;
+}
+
+.DessertsChildContentCompanent span {
+    font-family: var(--fontFamily);
+    color: var(--fontColor);
+    font-size: 1.3rem;
+}
+
+#GlobalDessertsContantCompanent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fontFamily);
+}
+
+#GlobalDessertsContantCompanent h1 {
+    text-align: center;
+}
+
+#GlobalDessertsContantCompanent a {
+    text-decoration: none;
+    color: var(--fontColor);
+}
+
+.assortimentDiscription {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+#assortimentCatalogButton {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    font-size: 2rem;
 }

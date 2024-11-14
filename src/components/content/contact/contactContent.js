@@ -3,10 +3,10 @@ import { nanoid } from "nanoid"
 import TelegramIcon from '@mui/icons-material/Telegram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PhoneIcon from '@mui/icons-material/Phone';
-import { LogoComponent } from "../logo/logoCompanent";
+import { LogoComponent } from "../../logo/logoCompanent";
 
 export const ContactContentCompanent = () => {
-    const iconSize = "4rem"
+    const iconSize = "3.2rem"
     const iconBorderRadius = "25% 25%"
     const telegramIcon = <TelegramIcon style={{ fontSize: iconSize, color: 'white', backgroundColor: '#135bc7', borderRadius: iconBorderRadius }} />
     const wathAppIcon = <WhatsAppIcon style={{ fontSize: iconSize, color: 'white', backgroundColor: '#128d3f', borderRadius: iconBorderRadius }} />
