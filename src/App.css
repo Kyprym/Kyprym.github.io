@@ -192,6 +192,7 @@ body {
     height: 2.7rem;
     border-radius: 15px 15px;
     font-weight: bold;
+    font-size: 2rem;
     transition: 0.3s;
 }
 
@@ -220,7 +221,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    border-radius: 8% 8%;
+    border-radius: 10px 10px;
     background-color: var(--backgroundColor);
     box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.6);
 
@@ -236,4 +237,26 @@ body {
     position: fixed;
     right: 0.3rem;
     top: 0.3rem;
+}
+
+.ingredients {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dessertsDescription {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
 }
