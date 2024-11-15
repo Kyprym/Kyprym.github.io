@@ -206,3 +206,34 @@ body {
     transition: 0.3s;
     font-weight: bold;
 }
+
+
+
+.DessertDescriptionWindowComponent {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8%;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    border-radius: 8% 8%;
+    background-color: var(--backgroundColor);
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.6);
+
+}
+
+.DessertDescriptionWindowComponent img {
+    margin-top: 0.8rem;
+    width: 100%;
+    border-radius: 8% 8%;
+}
+
+.closeDessertDescriptionWindowComponent {
+    position: fixed;
+    right: 0.3rem;
+    top: 0.3rem;
+}

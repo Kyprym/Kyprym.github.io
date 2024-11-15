@@ -5,6 +5,7 @@ import { AboutMeContentComponent } from "./aboutMeContentComponent";
 import { BasketContentComponent } from "./basketContantComponent";
 import { useMemo } from "react";
 
+
 export const GlobalContentCompanent = () => {
 
     const contentState = useSelector(state => state.buttonState)
@@ -15,6 +16,10 @@ export const GlobalContentCompanent = () => {
         if (contentState[3]) return <BasketContentComponent />;
         return null;
     }, [contentState])
+
+
+
+
 
     return <div id="GlobalContentCompanent">
         {contact}
