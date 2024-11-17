@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.19d9d9c6.css",
-    "main.js": "/static/js/main.7b8f791f.js",
+    "main.css": "/static/css/main.25c08ca5.css",
+    "main.js": "/static/js/main.ff326cf7.js",
     "static/js/453.9f2200f4.chunk.js": "/static/js/453.9f2200f4.chunk.js",
+    "static/media/me photo.png": "/static/media/me photo.57122985be42a1500ed9.png",
     "static/media/medovik.png": "/static/media/medovik.8b40c429ade33f729497.png",
     "static/media/koffe.png": "/static/media/koffe.987cae3ede9641fba754.png",
     "static/media/rulette.png": "/static/media/rulette.7b33327f1bebd2738e6d.png",
     "static/media/chocolate.png": "/static/media/chocolate.3286b147ca6ffcfaa9e9.png",
     "static/media/cherries_in_sour_cream.png": "/static/media/cherries_in_sour_cream.b1669d5fc457a33a9842.png",
     "static/media/france_kiss.png": "/static/media/france_kiss.504a542853894b5c4624.png",
+    "static/media/LOGO NR.png": "/static/media/LOGO NR.a5be21e175f889b5a698.png",
     "static/media/contentLogo.jpg": "/static/media/contentLogo.927c237fed9a1ced4164.jpg",
     "index.html": "/index.html",
-    "main.19d9d9c6.css.map": "/static/css/main.19d9d9c6.css.map",
-    "main.7b8f791f.js.map": "/static/js/main.7b8f791f.js.map",
+    "main.25c08ca5.css.map": "/static/css/main.25c08ca5.css.map",
+    "main.ff326cf7.js.map": "/static/js/main.ff326cf7.js.map",
     "453.9f2200f4.chunk.js.map": "/static/js/453.9f2200f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19d9d9c6.css",
-    "static/js/main.7b8f791f.js"
+    "static/css/main.25c08ca5.css",
+    "static/js/main.ff326cf7.js"
   ]
 }
