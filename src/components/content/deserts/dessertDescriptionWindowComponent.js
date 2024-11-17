@@ -15,7 +15,6 @@ export const DessertDescriptionWindowComponent = ({ name, img, description, pric
         <img src={img} alt="description" />
         <h1>{name}</h1>
         <div>
-            <div className="ingredients">Состав:</div>
             <div className="dessertsDescription">{description}</div>
         </div>
         <div className="price">{price} <CurrencyRubleIcon /></div>

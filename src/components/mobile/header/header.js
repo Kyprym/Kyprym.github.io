@@ -2,10 +2,15 @@ import { useSelector } from "react-redux"
 import { HeaderButton } from "./headerButton"
 import { useHeaderButtonState } from "../../../store/actions/contactHeaderButtonsActon"
 import { nanoid } from "nanoid"
+import aboutMeImmGLogo from '../../../img/LOGO NR.png'
 
 export const HeaderComponent = () => {
 
     const buttonState = useSelector(state => state.buttonState)
+
+    const aboutMeButtonIMG = <img src={aboutMeImmGLogo} alt="logo" />
+
+
 
     const {
         contactButtonActive,
@@ -17,6 +22,11 @@ export const HeaderComponent = () => {
 
     const headerButtonsTextArr = [
         {
+            text: aboutMeButtonIMG,
+            state: buttonState[2],
+            clickFunc: aboutMeButtonActive
+        },
+        {
             text: 'Контакты',
             state: buttonState[0],
             clickFunc: contactButtonActive
@@ -26,11 +36,7 @@ export const HeaderComponent = () => {
             state: buttonState[1],
             clickFunc: dessertButtonActive
         },
-        {
-            text: 'обо мне',
-            state: buttonState[2],
-            clickFunc: aboutMeButtonActive
-        },
+
         {
             text: 'корзина',
             state: buttonState[3],
