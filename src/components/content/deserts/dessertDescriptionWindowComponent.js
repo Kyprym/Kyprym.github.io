@@ -1,9 +1,10 @@
 import { useDescriptionDessertsState } from "../../../store/actions/descriptionDessertsAction"
 import CurrencyRubleIcon from '@mui/icons-material/CurrencyRuble';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+import AccordionUsage from "./dessetsAccordion";
 
 
-export const DessertDescriptionWindowComponent = ({ name, img, description, price, button }) => {
+export const DessertDescriptionWindowComponent = ({ name, img, description, price, button, dessertCompaund }) => {
     const { closeAllDessertDescription } = useDescriptionDessertsState()
 
     return <div className="DessertDescriptionWindowComponent ">
@@ -17,9 +18,11 @@ export const DessertDescriptionWindowComponent = ({ name, img, description, pric
         <div>
             <div className="dessertsDescription">{description}</div>
         </div>
+        <AccordionUsage compound={dessertCompaund} />
         <div className="price">{price} <CurrencyRubleIcon /></div>
         <div className="DessertsChildbutton ContactChildComponent">
             <span>{button}</span>
         </div>
+
     </div>
 }

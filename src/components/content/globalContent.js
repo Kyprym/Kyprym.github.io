@@ -2,7 +2,7 @@ import { ContactContentCompanent } from "./contact/contactContent"
 import { useSelector } from "react-redux"
 import { DessertsContantCompanent } from "./deserts/dessetsComponent";
 import { AboutMeContentComponent } from "./about_me/aboutMeContentComponent";
-import { BasketContentComponent } from "./basketContantComponent";
+import { BasketContentComponent } from "./basketContentCompanents/basketContantComponent";
 import { useMemo } from "react";
 
 
