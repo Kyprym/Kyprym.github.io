@@ -5,6 +5,8 @@
     user-select: none;
 }
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 :root {
@@ -17,7 +19,6 @@
 
 body {
     background-color: var(--backgroundColor);
-
 }
 
 .fuctional_component {

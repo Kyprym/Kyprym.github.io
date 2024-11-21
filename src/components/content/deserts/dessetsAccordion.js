@@ -9,6 +9,13 @@ export default function AccordionUsage({ compound }) {
 
     const changeBackGrColorButton = () => setAccoridonState(!accordionState)
 
+    const scrollControll = () => {
+        if (!accordionState) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }
 
     return (
         <div>
@@ -17,7 +24,10 @@ export default function AccordionUsage({ compound }) {
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1-content"
                     className="panel1-header"
-                    onClick={changeBackGrColorButton}
+                    onClick={() => {
+                        changeBackGrColorButton()
+                        scrollControll()
+                    }}
                     style={{ backgroundColor: accordionState ? "#c4c0b9" : "#e2dcd0" }}
                 >
                     <h2>Состав</h2>

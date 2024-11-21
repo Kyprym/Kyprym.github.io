@@ -49,7 +49,7 @@ export const ContactContentCompanent = () => {
 
     return <div id="contactContentCompanent">
         <LogoComponent />
-        <p>Вы можете связасться со мной через:</p>
+        <p>Вы можете связаться со мной через:</p>
         <span id="contactContentButtons">
             {
                 contactArr.map(elem => {

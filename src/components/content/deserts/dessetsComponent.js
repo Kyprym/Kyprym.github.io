@@ -93,7 +93,6 @@ export const DessertsContantCompanent = () => {
         },
     ]
 
-
     return <div id="GlobalDessertsContantCompanent">
         <LogoComponent />
         <h1> Ассортимент</h1>
@@ -103,7 +102,6 @@ export const DessertsContantCompanent = () => {
             id="assortimentCatalogButton"
             className="ContactChildComponent">
             скачать</a>
-
 
         <div id="DessertsContantCompanent">
             {showDescriptionDessertWindow()}
@@ -116,7 +114,6 @@ export const DessertsContantCompanent = () => {
                         button={elem.button}
                         key={nanoid()}
                         clickFunc={elem.clickFunc}
-
                     />
 
                 })
