@@ -1,5 +1,5 @@
 
-const defaultState = [false, true, false, false]
+const defaultState = [false, false, false, true]
 export const HeaderButtonReducer = (state = defaultState, action) => {
     switch (action.type) {
         case "CONTACT_BUTTON_ACTIVE":

@@ -283,3 +283,46 @@ body {
     width: 90%;
     font-size: 1.5rem;
 }
+
+#BasketContentComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.BasketChildComponent td {
+    background-color: #4a1a1a28;
+}
+
+.BasketChildComponentButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    border: 0.2rem solid var(--fontColor);
+    border-radius: 25px 25px 25px 25px;
+    transition: 1.2s;
+}
+
+.BasketChildComponentButton:active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    border: 0.2rem solid var(--fontColor);
+    border-radius: 25px 25px 25px 25px;
+    background: var(--backgroundColorActive);
+    transition: 0.1s;
+}
+
+
+.BasketChildComponent span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DeleteIcon {
+    background-color: none;
+}
