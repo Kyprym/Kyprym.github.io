@@ -4,7 +4,7 @@ import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import AccordionUsage from "./dessetsAccordion";
 
 
-export const DessertDescriptionWindowComponent = ({ name, img, description, price, button, dessertCompaund }) => {
+export const DessertDescriptionWindowComponent = ({ name, img, description, price, button, dessertCompaund, addInBasket }) => {
     const { closeAllDessertDescription } = useDescriptionDessertsState()
 
     return <div className="DessertDescriptionWindowComponent ">
@@ -20,7 +20,9 @@ export const DessertDescriptionWindowComponent = ({ name, img, description, pric
         </div>
         <AccordionUsage compound={dessertCompaund} />
         <div className="price">{price} <CurrencyRubleIcon /></div>
-        <div className="DessertsChildbutton ContactChildComponent">
+        <div
+            onClick={addInBasket}
+            className="DessertsChildbutton ContactChildComponent">
             <span>{button}</span>
         </div>
 
