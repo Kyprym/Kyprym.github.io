@@ -293,6 +293,7 @@ body {
     margin-top: 3rem;
     font-family: var(--fontFamily);
     font-weight: bold;
+    margin-bottom: 3rem;
 }
 
 .BasketChildComponent td {

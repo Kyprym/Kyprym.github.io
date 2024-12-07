@@ -33,7 +33,10 @@ export const BasketReduser = (state = defaultState, action) => {
             if (elem.name === name) {
                 if (elem.count !== 0) {
                     elem.count = 0
+
                 }
+                console.log('clear ', name)
+
             }
         })
     }
@@ -41,6 +44,7 @@ export const BasketReduser = (state = defaultState, action) => {
     const clearBasket = () => {
         state.map(elem => {
             elem.count = 0
+            console.log('clear Basket')
         })
     }
 
@@ -53,8 +57,10 @@ export const BasketReduser = (state = defaultState, action) => {
             return state
         case "CLEAR_DESSERT":
             clearCount(action.payload)
-        case "CLEAR_BASKET":
+            return state
+        case 'CLEAR_BASKET':
             clearBasket()
+            return state
         default:
             return state
 
