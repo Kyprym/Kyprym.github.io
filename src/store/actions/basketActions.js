@@ -16,8 +16,17 @@ export const useBasketActions = () => {
             payload: dessertName
         })
     }
+
+
+    const clearDessetInBasket = (dessertName) => {
+        dispatch({
+            type: "CLEAR_DESSERT",
+            payload: dessertName
+        })
+    }
     return {
         addDessertINBusket,
-        delDessertInBasket
+        delDessertInBasket,
+        clearDessetInBasket
     }
 }

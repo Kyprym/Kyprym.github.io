@@ -5,20 +5,22 @@
     user-select: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');*/
 
 :root {
     --fontColor: #4a1a1a;
     --backgroundColor: #f7f1e6;
     --backgroundColorActive: linear-gradient(to right, #a86c78d5, #ca6259d5);
-    --fontFamily: "Great Vibes", cursive;
+    --fontFamily: "Cormorant Garamond", cursive;
 }
 
 
 body {
     background-color: var(--backgroundColor);
+
 }
 
 .fuctional_component {
@@ -289,10 +291,19 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-top: 3rem;
+    font-family: var(--fontFamily);
+    font-weight: bold;
 }
 
 .BasketChildComponent td {
-    background-color: #4a1a1a28;
+    background-color: #4a1a1a17;
+    font-size: 1.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.DeleteIcon {
+    background: none;
 }
 
 .BasketChildComponentButton {
@@ -325,4 +336,19 @@ body {
 
 .DeleteIcon {
     background-color: none;
+}
+
+#tHeader td {
+    text-align: center;
+    font-weight: bold;
+}
+
+.basketCount {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+tbody #basketNullText {
+    font-size: 1.5rem;
+    text-align: center;
 }

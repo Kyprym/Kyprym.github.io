@@ -22,11 +22,22 @@ export const BasketReduser = (state = defaultState, action) => {
         state.map(elem => {
             if (elem.name === name) {
                 if (elem.count !== 0) {
+                    elem.count -= 1
+                }
+            }
+        })
+    }
+
+    const clearCount = (name) => {
+        state.map(elem => {
+            if (elem.name === name) {
+                if (elem.count !== 0) {
                     elem.count = 0
                 }
             }
         })
     }
+
 
     switch (action.type) {
         case "ADD_DESSERT":
@@ -35,6 +46,8 @@ export const BasketReduser = (state = defaultState, action) => {
         case "DEL_DESSERT":
             delCount(action.payload)
             return state
+        case "CLEAR_DESSERT":
+            clearCount(action.payload)
         default:
             return state
     }
