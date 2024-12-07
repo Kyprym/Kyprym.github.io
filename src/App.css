@@ -352,3 +352,28 @@ tbody #basketNullText {
     font-size: 1.5rem;
     text-align: center;
 }
+
+.clearBasketButton {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.clearBasketButton span {
+    width: 15rem;
+    font-size: 1.5rem;
+    border: 5px solid #4a1a1a;
+    border-radius: 25px 25px;
+    padding: 0.4rem;
+    transition: 0.3s;
+
+}
+
+.clearBasketButton span:active {
+    width: 15rem;
+    font-size: 1.5rem;
+    border: 5px solid #4a1a1a;
+    border-radius: 25px 25px;
+    padding: 0.4rem;
+    background: var(--backgroundColorActive);
+    transition: 0.3s;
+}

@@ -18,7 +18,8 @@ export const BasketContentComponent = () => {
     const {
         addDessertINBusket,
         delDessertInBasket,
-        clearDessetInBasket
+        clearDessetInBasket,
+        clearBasket
     } = useBasketActions()
 
 
@@ -34,7 +35,6 @@ export const BasketContentComponent = () => {
     return <div id="BasketContentComponent" onClick={render}>
         <table>
             <tbody>
-
                 {(dessertInBasketState[0].count === 0 &&
                     dessertInBasketState[1].count === 0 &&
                     dessertInBasketState[2].count === 0 &&
@@ -63,5 +63,13 @@ export const BasketContentComponent = () => {
                 })}
             </tbody>
         </table>
+        {(dessertInBasketState[0].count === 0 &&
+            dessertInBasketState[1].count === 0 &&
+            dessertInBasketState[2].count === 0 &&
+            dessertInBasketState[3].count === 0 &&
+            dessertInBasketState[4].count === 0 &&
+            dessertInBasketState[5].count === 0) ? <></> :
+            <div className="clearBasketButton"><span onClick={clearBasket}>Очистить корзину</span></div>
+        }
     </div>
 }

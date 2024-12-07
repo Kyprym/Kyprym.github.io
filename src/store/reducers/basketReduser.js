@@ -38,6 +38,11 @@ export const BasketReduser = (state = defaultState, action) => {
         })
     }
 
+    const clearBasket = () => {
+        state.map(elem => {
+            elem.count = 0
+        })
+    }
 
     switch (action.type) {
         case "ADD_DESSERT":
@@ -48,7 +53,10 @@ export const BasketReduser = (state = defaultState, action) => {
             return state
         case "CLEAR_DESSERT":
             clearCount(action.payload)
+        case "CLEAR_BASKET":
+            clearBasket()
         default:
             return state
+
     }
 }
