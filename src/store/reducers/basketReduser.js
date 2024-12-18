@@ -1,14 +1,8 @@
+import { defaultBasketState } from "../BasketList"
 
-const defaultState = [
-    { name: "Медовик", count: 0 },
-    { name: "Кофейный", count: 0 },
-    { name: "Вишня в сметане", count: 0 },
-    { name: "Французский поцелуй", count: 0 },
-    { name: "Шоколад", count: 0 },
-    { name: "Рулет «Шоколадный»", count: 0 },
-]
 
-export const BasketReduser = (state = defaultState, action) => {
+
+export const BasketReduser = (state = defaultBasketState, action) => {
 
     const addCount = (name) => {
         state.map(elem => {
@@ -35,7 +29,6 @@ export const BasketReduser = (state = defaultState, action) => {
                     elem.count = 0
 
                 }
-                console.log('clear ', name)
 
             }
         })
@@ -44,7 +37,6 @@ export const BasketReduser = (state = defaultState, action) => {
     const clearBasket = () => {
         state.map(elem => {
             elem.count = 0
-            console.log('clear Basket')
         })
     }
 
