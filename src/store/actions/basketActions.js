@@ -32,10 +32,6 @@ export const useBasketActions = () => {
     }
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 17f37e20aa36219bac9effdf00a7dd2a585a4434
     return {
         addDessertINBusket,
         delDessertInBasket,
