@@ -7,7 +7,6 @@ import { useState } from "react"
 
 export const BasketContentComponent = () => {
 
-    const dessertInBasketState = useSelector(state => state.dessertInBasketState)
     const [state, setState] = useState(false)
 
     const render = () => {
@@ -19,9 +18,10 @@ export const BasketContentComponent = () => {
         addDessertINBusket,
         delDessertInBasket,
         clearDessetInBasket,
-        clearBasket
+        clearBasket,
     } = useBasketActions()
 
+    const dessertInBasketState = useSelector(state => state.dessertInBasketState)
 
     let basketCountArr = [
         { text: "Медовик", count: dessertInBasketState[0].count, add: () => addDessertINBusket('Медовик'), del: () => delDessertInBasket('Медовик'), clear: () => clearDessetInBasket('Медовик') },
@@ -31,6 +31,42 @@ export const BasketContentComponent = () => {
         { text: "Шоколад", count: dessertInBasketState[4].count, add: () => addDessertINBusket('Шоколад'), del: () => delDessertInBasket('Шоколад'), clear: () => clearDessetInBasket('Шоколад') },
         { text: "Рулет «Шоколадный»", count: dessertInBasketState[5].count, add: () => addDessertINBusket('Рулет «Шоколадный»'), del: () => delDessertInBasket('Рулет «Шоколадный»'), clear: () => clearDessetInBasket('Рулет «Шоколадный»') },
     ]
+
+    const basketCountInLocalStorageArr = [
+        {
+            name: basketCountArr[0].text,
+            count: basketCountArr[0].count
+        },
+        {
+            name: basketCountArr[1].text,
+            count: basketCountArr[1].count
+        },
+        {
+            name: basketCountArr[2].text,
+            count: basketCountArr[2].count
+        },
+        {
+            name: basketCountArr[3].text,
+            count: basketCountArr[3].count
+        },
+        {
+            name: basketCountArr[4].text,
+            count: basketCountArr[4].count
+        },
+        {
+            name: basketCountArr[5].text,
+            count: basketCountArr[5].count
+        },
+
+    ]
+
+    const basketJson = JSON.stringify(basketCountInLocalStorageArr)
+    const basketSetInLocalStorage = () => {
+        localStorage.setItem('basket', basketJson)
+    }
+
+
+    basketSetInLocalStorage()
 
     return <div id="BasketContentComponent" onClick={render}>
         <table>
