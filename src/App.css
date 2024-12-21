@@ -231,6 +231,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
+    height: 90%;
     border-radius: 10px 10px;
     background-color: var(--backgroundColor);
     box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.6);
@@ -239,7 +240,7 @@ body {
 
 .DessertDescriptionWindowComponent img {
     margin-top: 0.8rem;
-    width: 100%;
+    width: 90%;
     border-radius: 8% 8%;
 }
 

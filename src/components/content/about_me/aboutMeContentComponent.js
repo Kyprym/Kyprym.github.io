@@ -1,4 +1,4 @@
-import aboutMeImg from "../../../img/about me/me photo.png"
+import aboutMeImg from "../../../img/about me/me photo.jpg"
 
 export const AboutMeContentComponent = () => {
     return <div id="aboutMePage">

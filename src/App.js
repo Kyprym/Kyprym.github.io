@@ -17,15 +17,12 @@ function App() {
     });
   };
 
-  addBasketInLocalStorage();
-
-
   useEffect(() => {
     setIsMobile(/Mobi|Android/i.test(navigator.userAgent));
   }, []);
 
 
-
+  addBasketInLocalStorage();
 
   addBasketInLocalStorage()
 
