@@ -6,7 +6,7 @@ import { BasketContentComponent } from "./basketContentCompanents/basketContantC
 import { useMemo } from "react";
 
 
-export const GlobalContentCompanent = () => {
+export const MobileGlobalContentCompanent = () => {
 
     const contentState = useSelector(state => state.buttonState)
     const contact = useMemo(() => {

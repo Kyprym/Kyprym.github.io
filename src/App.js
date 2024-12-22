@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import './App.css';
 import { GlobalMobileComponent } from './components/mobile/globalMobileComponent'
 import { useSelector } from 'react-redux';
+import { PCglobalComponent } from './components/PC/PCglobalComponent';
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -21,6 +21,14 @@ function App() {
     setIsMobile(/Mobi|Android/i.test(navigator.userAgent));
   }, []);
 
+  useEffect(() => {
+    if (isMobile) {
+      import("../src/mobileApp.css")
+    } else {
+      import("../src/PCApp.css")
+    }
+  }, [isMobile])
+
 
   addBasketInLocalStorage();
 
@@ -31,7 +39,7 @@ function App() {
 
       {isMobile ?
         < GlobalMobileComponent />
-        : "ПК версия в разработке"}
+        : <PCglobalComponent />}
     </div>
   );
 }

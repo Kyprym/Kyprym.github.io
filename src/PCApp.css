@@ -66,20 +66,34 @@ body {
     justify-content: center;
 }
 
-#contactContentCompanent p {
+#PCcontactContentCompanent {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#PCcontactContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#PCcontactContentCompanent p {
     font-size: 1.5rem;
     text-align: center;
     font-family: var(--fontFamily);
 }
 
-#contactContentButtons {
+#PCcontactContentButtons {
     margin-top: -1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.ContactChildComponent {
+.PCcontactChildComponent {
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -92,7 +106,10 @@ body {
     transition: 1.2s;
 }
 
-.ContactChildComponent:active {
+
+.PCcontactChildComponent:hover {
+    width: 90%;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -105,29 +122,32 @@ body {
     transition: 0.1s;
 }
 
-.ContactChildComponent div {
+
+.PCcontactChildComponent div {
+
+    padding-left: 2rem;
     margin: 0.5rem;
 }
 
 .ContactChildComponentText {
     color: var(--fontColor);
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     padding-left: 2.5rem;
     transition: 1.2s;
 }
 
 .ContactChildComponentIcon {
-    padding-right: 1.5rem;
+    padding-right: 2rem;
 }
 
-.ContactChildComponent:active .ContactChildComponentText {
+.PCcontactChildComponent:hover .ContactChildComponentText {
     font-size: 2.5rem;
     transition: 0.3s;
 }
 
 .contentLogo {
     margin-top: 2.1rem;
-    width: 100%;
+    width: 50%;
     height: 50%;
 }
 
@@ -135,42 +155,45 @@ body {
     color: var(--fontColor);
 }
 
-#DessertsContantCompanent {
+#PCdessertsContantCompanent {
+    width: 80%;
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.DessertsChildContentCompanent {
+.PCdessertsChildContentCompanent {
     text-align: center;
-    width: 50%;
+    width: 30%;
     padding: 0.2rem;
 }
 
-.DessertsChildContentCompanent img {
-    width: 95%;
+.PCdessertsChildContentCompanent img {
+    cursor: pointer;
+    width: 80%;
     border-radius: 15%;
 }
 
-.DessertsChildContentCompanent span {
+.PCdessertsChildContentCompanent span {
     font-family: var(--fontFamily);
     color: var(--fontColor);
     font-size: 1.3rem;
 }
 
-#GlobalDessertsContantCompanent {
+#PCglobalDessertsContantCompanent {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: var(--fontFamily);
 }
 
-#GlobalDessertsContantCompanent h1 {
+#PCglobalDessertsContantCompanent h1 {
     text-align: center;
 }
 
-#GlobalDessertsContantCompanent a {
+#PCglobalDessertsContantCompanent a {
     text-decoration: none;
     color: var(--fontColor);
 }
@@ -183,24 +206,25 @@ body {
 #assortimentCatalogButton {
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 10rem;
+    padding: 0.5rem;
     font-size: 2rem;
 }
 
-.DessertInformation {
+.PCdessertInformation {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.DessertsChildbutton {
+.PCdessertsChildbutton {
     background-color: #4a1a1a1f;
     margin-top: 0rem;
     margin-bottom: 1rem;
     display: flex;
     justify-content: center;
-    width: 9.5rem;
+    width: 10rem;
     height: 2.7rem;
     border-radius: 15px 15px;
     font-weight: bold;
@@ -208,52 +232,69 @@ body {
     transition: 0.3s;
 }
 
-.DessertsChildbutton:active {
+.PCdessertsChildbutton:hover {
     margin-top: 0rem;
     margin-bottom: 1rem;
     display: flex;
     justify-content: center;
-    width: 9.5rem;
+    width: 10rem;
     height: 2.7rem;
     border-radius: 15px 15px;
     transition: 0.3s;
     font-weight: bold;
+    font-size: 2rem;
+    transition: 0.3s;
 }
 
-.DessertDescriptionWindowComponent {
+.PCdessertsDescription {
+    font-size: 1.5rem;
+}
+
+.PCdessertDescriptionWindowComponent {
     position: fixed;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 8%;
+    padding: 1rem;
     z-index: 100;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 95%;
     border-radius: 10px 10px;
     background-color: var(--backgroundColor);
     box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.6);
 
 }
 
-.DessertDescriptionWindowComponent img {
+.PCdessertDescriptionWindowComponent img {
     margin-top: 0.8rem;
-    width: 90%;
+    width: 100%;
     border-radius: 8% 8%;
 }
 
 .closeDessertDescriptionWindowComponent {
+    cursor: pointer;
     position: fixed;
     right: 0.3rem;
     top: 0.3rem;
+}
+
+.PCwindowDessertDescription {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .dessertsDescription {
     text-align: center;
     font-size: 1.5rem;
 }
+
+
 
 .price {
     display: flex;
@@ -266,24 +307,27 @@ body {
     margin-bottom: 0.7rem;
 }
 
-#aboutMePage {
+#PCaboutMePage {
     display: flex;
-    margin-top: 2.1rem;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    margin: 4.1rem;
     font-family: var(--fontFamily);
 }
 
-#aboutMePage img {
+#PCaboutMePage span {
+    text-align: center;
+    width: 40%;
+}
+
+#PCaboutMePage img {
     margin-top: 1rem;
     width: 80%;
     border-radius: 100%;
 }
 
-#aboutMePage p {
-    text-indent: 2rem;
-    margin-top: -0.5rem;
-    width: 90%;
+#PCaboutMePage p {
     font-size: 1.5rem;
 }
 

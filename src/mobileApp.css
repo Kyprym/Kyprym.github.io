@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');*/
+
+:root {
+    --fontColor: #4a1a1a;
+    --backgroundColor: #f7f1e6;
+    --backgroundColorActive: linear-gradient(to right, #a86c78d5, #ca6259d5);
+    --fontFamily: "Cormorant Garamond", cursive;
+}
+
+
+body {
+    background-color: var(--backgroundColor);
+
+}
+
+.fuctional_component {
+    background-color: var(--backgroundColor);
+
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    font-family: var(--fontFamily);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header div {
+    margin-top: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.45rem;
+    padding: 0.5rem 1rem 1rem 1rem;
+    padding-bottom: 0.5rem;
+    background: none;
+    color: var(--fontColor);
+    cursor: pointer;
+    border-radius: 10px 10px;
+}
+
+.header img {
+    height: 1.55rem;
+}
+
+.buttom_line {
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--fontColor);
+}
+
+#GlobalContentCompanent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contactContentCompanent p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: var(--fontFamily);
+}
+
+#contactContentButtons {
+    margin-top: -1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ContactChildComponent {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.2rem solid var(--fontColor);
+    border-radius: 25px 25px 25px 25px;
+    margin-top: 2rem;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.6);
+    transition: 1.2s;
+}
+
+.ContactChildComponent:active {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.2rem solid var(--fontColor);
+    border-radius: 25px 25px 25px 25px;
+    margin-top: 2rem;
+    box-shadow: 2px 15px 20px rgba(0, 0, 0, 0.6);
+    background: var(--backgroundColorActive);
+    transition: 0.1s;
+}
+
+.ContactChildComponent div {
+    margin: 0.5rem;
+}
+
+.ContactChildComponentText {
+    color: var(--fontColor);
+    font-size: 2.3rem;
+    padding-left: 2.5rem;
+    transition: 1.2s;
+}
+
+.ContactChildComponentIcon {
+    padding-right: 1.5rem;
+}
+
+.ContactChildComponent:active .ContactChildComponentText {
+    font-size: 2.5rem;
+    transition: 0.3s;
+}
+
+.contentLogo {
+    margin-top: 2.1rem;
+    width: 100%;
+    height: 50%;
+}
+
+.buttom_line {
+    color: var(--fontColor);
+}
+
+#DessertsContantCompanent {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.DessertsChildContentCompanent {
+    text-align: center;
+    width: 50%;
+    padding: 0.2rem;
+}
+
+.DessertsChildContentCompanent img {
+    width: 95%;
+    border-radius: 15%;
+}
+
+.DessertsChildContentCompanent span {
+    font-family: var(--fontFamily);
+    color: var(--fontColor);
+    font-size: 1.3rem;
+}
+
+#GlobalDessertsContantCompanent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fontFamily);
+}
+
+#GlobalDessertsContantCompanent h1 {
+    text-align: center;
+}
+
+#GlobalDessertsContantCompanent a {
+    text-decoration: none;
+    color: var(--fontColor);
+}
+
+.assortimentDiscription {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+#assortimentCatalogButton {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    font-size: 2rem;
+}
+
+.DessertInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.DessertsChildbutton {
+    background-color: #4a1a1a1f;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 9.5rem;
+    height: 2.7rem;
+    border-radius: 15px 15px;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.DessertsChildbutton:active {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    height: 2.7rem;
+    border-radius: 15px 15px;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.DessertDescriptionWindowComponent {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8%;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    border-radius: 10px 10px;
+    background-color: var(--backgroundColor);
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.6);
+
+}
+
+.DessertDescriptionWindowComponent img {
+    margin-top: 0.8rem;
+    width: 90%;
+    border-radius: 8% 8%;
+}
+
+.closeDessertDescriptionWindowComponent {
+    position: fixed;
+    right: 0.3rem;
+    top: 0.3rem;
+}
+
+.dessertsDescription {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+#aboutMePage {
+    display: flex;
+    margin-top: 2.1rem;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fontFamily);
+}
+
+#aboutMePage img {
+    margin-top: 1rem;
+    width: 80%;
+    border-radius: 100%;
+}
+
+#aboutMePage p {
+    text-indent: 2rem;
+    margin-top: -0.5rem;
+    width: 90%;
+    font-size: 1.5rem;
+}
+
+#BasketContentComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+    font-family: var(--fontFamily);
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.BasketChildComponent td {
+    background-color: #4a1a1a17;
+    font-size: 1.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.DeleteIcon {
+    background: none;
+}
+
+.BasketChildComponentButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    border: 0.2rem solid var(--fontColor);
+    border-radius: 25px 25px 25px 25px;
+    transition: 1.2s;
+}
+
+.BasketChildComponentButton:active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    border: 0.2rem solid var(--fontColor);
+    border-radius: 25px 25px 25px 25px;
+    background: var(--backgroundColorActive);
+    transition: 0.1s;
+}
+
+
+.BasketChildComponent span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DeleteIcon {
+    background-color: none;
+}
+
+#tHeader td {
+    text-align: center;
+    font-weight: bold;
+}
+
+.basketCount {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+tbody #basketNullText {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.clearBasketButton {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.clearBasketButton span {
+    width: 15rem;
+    font-size: 1.5rem;
+    border: 5px solid #4a1a1a;
+    border-radius: 25px 25px;
+    padding: 0.4rem;
+    transition: 0.3s;
+
+}
+
+.clearBasketButton span:active {
+    width: 15rem;
+    font-size: 1.5rem;
+    border: 5px solid #4a1a1a;
+    border-radius: 25px 25px;
+    padding: 0.4rem;
+    background: var(--backgroundColorActive);
+    transition: 0.3s;
+}
