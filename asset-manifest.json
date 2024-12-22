@@ -1,7 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.7e130155.css",
-    "main.js": "/static/js/main.1087b090.js",
+    "main.css": "/static/css/main.31d6cfe0.css",
+    "main.js": "/static/js/main.2baf5396.js",
+    "static/css/76.6dd40766.chunk.css": "/static/css/76.6dd40766.chunk.css",
+    "static/js/76.3349007d.chunk.js": "/static/js/76.3349007d.chunk.js",
+    "static/css/255.c99c445e.chunk.css": "/static/css/255.c99c445e.chunk.css",
+    "static/js/255.d1eb8714.chunk.js": "/static/js/255.d1eb8714.chunk.js",
     "static/js/453.9f2200f4.chunk.js": "/static/js/453.9f2200f4.chunk.js",
     "static/media/me photo.jpg": "/static/media/me photo.22a6ac65f820bf34d337.jpg",
     "static/media/LOGO NR.png": "/static/media/LOGO NR.a5be21e175f889b5a698.png",
@@ -13,12 +17,15 @@
     "static/media/france_kiss.jpg": "/static/media/france_kiss.9465efd1e2e05d10b676.jpg",
     "static/media/contentLogo.jpg": "/static/media/contentLogo.927c237fed9a1ced4164.jpg",
     "index.html": "/index.html",
-    "main.7e130155.css.map": "/static/css/main.7e130155.css.map",
-    "main.1087b090.js.map": "/static/js/main.1087b090.js.map",
+    "main.2baf5396.js.map": "/static/js/main.2baf5396.js.map",
+    "76.6dd40766.chunk.css.map": "/static/css/76.6dd40766.chunk.css.map",
+    "76.3349007d.chunk.js.map": "/static/js/76.3349007d.chunk.js.map",
+    "255.c99c445e.chunk.css.map": "/static/css/255.c99c445e.chunk.css.map",
+    "255.d1eb8714.chunk.js.map": "/static/js/255.d1eb8714.chunk.js.map",
     "453.9f2200f4.chunk.js.map": "/static/js/453.9f2200f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e130155.css",
-    "static/js/main.1087b090.js"
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.2baf5396.js"
   ]
 }
